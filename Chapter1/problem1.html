@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>3개 중 최솟값</title>
+</head>
+<body>
+    <script>
+        function solution(a, b, c){
+            let answer = 0;
+            if(a > b){
+                answer = (b > c) ? c : b
+            }else{
+                answer = (b < c) ? a : (a < c) ? a : c 
+            }
+            return answer;
+        }
+        //선생님 풀이
+        // if(a < b) answer = a;
+        // else answer = b;
+        // if(c < answer) answer = c;
+        console.log(solution(6, 5, 11));
+    </script>
+</body>
+</html>
