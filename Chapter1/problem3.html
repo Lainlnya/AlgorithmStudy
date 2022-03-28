@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculating Pencil</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        function solution(studentNumber){
+            let answer = 0;
+            if(studentNumber % 12 > 0){
+                return answer = Math.floor(studentNumber / 12 ) + 1;
+            }
+            return answer = (studentNumber / 12);
+        }
+        console.log(solution(25));
+        console.log(solution(178));
+        console.log(solution(36));
+        //선생님 코드
+        // let answer = Math.ceil(studentNumber/12);
+        // return answer;
+    </script>
+</body>
+</html>

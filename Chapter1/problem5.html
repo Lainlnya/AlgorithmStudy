@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        function solution(arrayNum){
+            const arr = arrayNum.split(" ");
+            let minNum = arr[0];
+            console.log(arr);
+            for(let i = 0; i < arr.length; ++i){
+                arr[i] = parseInt(arr[i]);
+                minNum = minNum > arr[i] ? arr[i] : minNum;
+            }
+            return minNum;
+        }
+        console.log(solution('5 3 7 11 2 15 17'));
+    </script>
+</body>
+</html>
