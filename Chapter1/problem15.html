@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function solution(arr){
+            arr = Array.from(arr);
+            let middleString = [];
+            if( arr.length % 2 != 0){
+                middleString.push(arr[Math.round(arr.length/2) - 1]);
+            }else{
+                middleString.push(arr[arr.length/2 -1]);
+                middleString.push(arr[arr.length/2]);
+            }
+            
+            middleString = middleString.join('');
+            return middleString;
+        }
+        console.log(solution("study"));
+        console.log(solution("good"));
+    </script>
+</body>
+</html>

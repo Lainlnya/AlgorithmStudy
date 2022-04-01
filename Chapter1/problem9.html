@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function solution(arr){
+            let tempArr = [];
+            tempArr = Array.from(arr);
+            console.log(tempArr);
+            for( let i = 0; i < tempArr.length; ++i){
+                if( tempArr[i] == 'A') tempArr[i] = '#';
+            }
+            tempArr = tempArr.join('');
+            return tempArr;
+        }
+        console.log(solution("BANANA"));
+    </script>
+</body>
+</html>
