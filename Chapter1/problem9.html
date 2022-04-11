@@ -8,15 +8,25 @@
 </head>
 <body>
     <script>
-        function solution(arr){
-            let tempArr = [];
-            tempArr = Array.from(arr);
-            console.log(tempArr);
-            for( let i = 0; i < tempArr.length; ++i){
-                if( tempArr[i] == 'A') tempArr[i] = '#';
+        'use strict';
+        // function solution(enterString){
+        //     let tempArr = [];
+        //     tempArr = Array.from(enterString);
+        //     console.log(tempArr);
+        //     for( let i = 0; i < tempArr.length; ++i){
+        //         if( tempArr[i] == 'A') tempArr[i] = '#';
+        //     }
+        //     tempArr = tempArr.join('');
+        //     return tempArr;
+        // }
+        //선생님 풀이
+        function solution(enterString){
+            let answer = "";
+            for(let i of enterString){
+                if(i == 'A') answer += '#';
+                else answer += i;
             }
-            tempArr = tempArr.join('');
-            return tempArr;
+            return answer;
         }
         console.log(solution("BANANA"));
     </script>

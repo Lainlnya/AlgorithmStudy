@@ -10,8 +10,8 @@
     <script>
         function solution(dateNum, carNum){
             let answer = 0;
-            for( let i = 0; i < carNum.length; ++i){
-                if( carNum[i] % 10 == dateNum){
+            for( let i of carNum){
+                if( i % 10 == dateNum){
                     answer ++;
                 }
             }

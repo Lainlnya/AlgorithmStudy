@@ -11,15 +11,15 @@
         function solution(arr){
             let minNum, totalSum = 0;
             let tempArr = [];
-            for( let i = 0; i < arr.length; ++i){
-                if(arr[i] % 2 == 0) continue;
-                else tempArr.push(arr[i]);
+            for( let i of arr){
+                if(i % 2 == 0) continue;
+                else tempArr.push(i);
             }
             minNum = tempArr[0];
             
-            for( let i = 0; i < tempArr.length; ++i){
-                minNum = minNum < tempArr[i] ? minNum : tempArr[i]
-                totalSum += tempArr[i];
+            for( let i of tempArr){
+                minNum = minNum < i ? minNum : i
+                totalSum += i;
             }
             return `${totalSum}\n${minNum}`;
         }

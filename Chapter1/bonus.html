@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최대, 최소 내장함수 이용하기</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        function solution(arr){
+            //최소
+            //let answer = Math.min(...arr);
+            //spread를 사용하지 않을 때
+            //Math.min.apply(null, arr);
+            //최대
+            let answer = Math.max(...arr);
+            return answer;
+        }
+        let arr = [5, 3, 7, 11, 2, 15, 17];
+        console.log(solution(arr));
+    </script>
+</body>
+</html>
