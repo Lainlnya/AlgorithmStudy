@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        'use strict';
         function solution(arr){
             arr = Array.from(arr);
             for( let i = 0; i < arr.length; ++i){
@@ -22,6 +23,15 @@
             arr = arr.join('');
             return arr;
         }
+        //선생님코드
+        // function solution(s){
+        //     let answer = "";
+        //     for(let x of s){
+        //         if(x == x.toUpperCase()) answer += x.toLowerCase();
+        //         else answer += x.toUpperCase();
+        //     }
+        //     return answer;
+        // }
         console.log(solution("StuDY"));
     </script>
 </body>
