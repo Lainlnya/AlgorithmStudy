@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        'use strict';
-        // function solution(arr){
-        //     let tempArr = [];
-        //     arr.forEach(element => {
-        //         if(!tempArr.includes(element)){
-        //             tempArr.push(element);
-        //         }
-        //     });
-        //     return tempArr;
-        // }
-        //다른 풀이
-        //자바스크립트에서 set 객체는 중복을 허용하지 않는다.
-        function solution(arr){
-            let set = new Set(arr);
-            // set = [...set];
-            set = Array.from(set);
-            return set;
-        }
-        console.log(solution(["good", "time", "good", "time", "student"]));
+      'use strict';
+      // function solution(arr){
+      //     let tempArr = [];
+      //     arr.forEach(element => {
+      //         if(!tempArr.includes(element)){
+      //             tempArr.push(element);
+      //         }
+      //     });
+      //     return tempArr;
+      // }
+      //다른 풀이
+      //자바스크립트에서 set 객체는 중복을 허용하지 않는다.
+      function solution(arr) {
+        let set = new Set(arr);
+        // set = [...set];
+        set = Array.from(set);
+        return set;
+        //선생님 풀이
+        //let answer;
+        //참인 요소만 걸러서 answer에 return 해줌
+        // answer = arr.filter((v, i) => {
+        //   if (arr.indexOf(v) === i) return true;
+        // });
+        // return answer;
+      }
+      console.log(solution(['good', 'time', 'good', 'time', 'student']));
     </script>
-</body>
+  </body>
 </html>

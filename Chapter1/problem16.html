@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function solution(arr){
-            let tempArr = [];
-            arr = Array.from(arr);
-            arr.forEach(element => {
-                if(!tempArr.includes(element)){
-                    tempArr.push(element);
-                }
-            });
-            arr = tempArr.join('');
-            return arr;
-        }
-        console.log(solution("ksekkset"));
-        console.log(solution("beautiful"));
+      function solution(arr) {
+        let tempArr = [];
+        arr = Array.from(arr);
+        arr.forEach((element) => {
+          if (!tempArr.includes(element)) {
+            tempArr.push(element);
+          }
+        });
+        arr = tempArr.join('');
+        return arr;
+        // 선생님 풀이
+        // let answer = '';
+        // for (let i = 0; i < arr.length; ++i) {
+        //   //   console.log(arr[i], i, arr.indexOf(arr[i]));
+        //   if (arr.indexOf(arr[i]) === i) answer += arr[i];
+        // }
+        // return answer;
+      }
+      console.log(solution('ksekkset'));
+      console.log(solution('beautiful'));
     </script>
-</body>
+  </body>
 </html>
