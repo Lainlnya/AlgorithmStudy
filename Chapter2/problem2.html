@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        'use strict';
-        function solution(arr){
-            let answer = 1;
-            let maxHeight = arr[0];
-            for( let i = 0; i < arr.length -1; ++i){
-                maxHeight = (arr[i] > maxHeight) ? arr[i] : maxHeight;
-                
-                if(arr[i] < arr[i+1] && arr[i+1] > maxHeight) {
-                    answer++;
-                }
-            }
-            return answer;
+      'use strict';
+      function solution(arr) {
+        let answer = 1;
+        let maxHeight = arr[0];
+        // for( let i = 0; i < arr.length -1; ++i){
+        //     maxHeight = (arr[i] > maxHeight) ? arr[i] : maxHeight;
+
+        //     if(arr[i] < arr[i+1] && arr[i+1] > maxHeight) {
+        //         answer++;
+        //     }
+        // }
+        for (let i = 0; i < arr.length; ++i) {
+          if (arr[i] > maxHeight) {
+            answer++;
+            maxHeight = arr[i];
+          }
         }
-        console.log(solution([130, 135, 148, 140, 145, 150, 150, 153]));
+        return answer;
+      }
+      console.log(solution([130, 135, 148, 140, 145, 150, 150, 153]));
     </script>
-</body>
+  </body>
 </html>
