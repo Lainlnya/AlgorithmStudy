@@ -1,2 +1,7 @@
 # AlgorithmStudy
-Algorithm Study - Javascript
+
+## Algorithm Study - Javascript
+
+### Chapter1 - Complete
+
+### Chapter2 - Doing ~

@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
+  cursor: default;
+}
+
+html main, body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main .signup_part, body main .signup_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 504px;
+  border: 1px solid #DBDBDB;
+  margin: 0 0 10px 0;
+  padding: 10px 0 10px 0;
+  background-color: #FFFFFF;
+}
+
+html main .signup_part .logo_part, body main .signup_part .logo_part {
+  width: 175px;
+  height: 51px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./instagramLogo.png");
+}
+
+html main .signup_part .signup_form, body main .signup_part .signup_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 348px;
+  height: 363px;
+}
+
+html main .signup_part .signup_form .stargram_description, body main .signup_part .signup_form .stargram_description {
+  width: 268px;
+  height: 40px;
+  color: #8E8E8E;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+html main .signup_part .signup_form .signup_div, html main .signup_part .signup_form button, body main .signup_part .signup_form .signup_div, body main .signup_part .signup_form button {
+  -webkit-text-decoration: none solid #262626;
+          text-decoration: none solid #262626;
+  width: 268px;
+  height: 38px;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  background-color: #FAFAFA;
+  margin-bottom: 4px;
+}
+
+html main .signup_part .signup_form input, body main .signup_part .signup_form input {
+  -webkit-text-decoration: none solid #262626;
+          text-decoration: none solid #262626;
+  width: 250px;
+  height: 20px;
+  padding: 9px 0 7px 8px;
+  background-color: #FAFAFA;
+  border: transparent;
+}
+
+html main .signup_part .signup_form button, body main .signup_part .signup_form button {
+  height: 30px;
+  background-color: #0095F6;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 5px 9px;
+  margin-top: 10px;
+}
+
+html main .account_exist, body main .account_exist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 70px;
+  border: 1px solid #DBDBDB;
+  background-color: #FFFFFF;
+  font-size: 14px;
+}
+
+html main .account_exist a, body main .account_exist a {
+  text-decoration: none;
+  color: #0095F6;
+}
+/*# sourceMappingURL=signup.css.map */

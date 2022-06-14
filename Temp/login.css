@@ -1,0 +1,178 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
+  cursor: default;
+}
+
+html main, body main {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main .preview_part, body main .preview_part {
+  width: 50%;
+  height: 396px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-image: url("./main_image.png");
+}
+
+html main .login_part, body main .login_part {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html main .login_part .login_way, body main .login_part .login_way {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 396px;
+  border: 1px solid #DBDBDB;
+  margin: 0 0 10px 0;
+  padding: 10px 0 10px 0;
+  background-color: #FFFFFF;
+}
+
+html main .login_part .login_way .logo_part, body main .login_part .login_way .logo_part {
+  width: 175px;
+  height: 51px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./instagramLogo.png");
+}
+
+html main .login_part .login_way .login_form, body main .login_part .login_way .login_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 348px;
+  height: 200px;
+}
+
+html main .login_part .login_way .login_form .login_div, html main .login_part .login_way .login_form button, body main .login_part .login_way .login_form .login_div, body main .login_part .login_way .login_form button {
+  -webkit-text-decoration: none solid #262626;
+          text-decoration: none solid #262626;
+  width: 268px;
+  height: 38px;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  background-color: #FAFAFA;
+  margin-bottom: 4px;
+}
+
+html main .login_part .login_way .login_form input, body main .login_part .login_way .login_form input {
+  -webkit-text-decoration: none solid #262626;
+          text-decoration: none solid #262626;
+  width: 250px;
+  height: 20px;
+  padding: 9px 0 7px 8px;
+  background-color: #FAFAFA;
+  border: transparent;
+}
+
+html main .login_part .login_way .login_form button, body main .login_part .login_way .login_form button {
+  height: 30px;
+  background-color: #0095F6;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 5px 9px;
+}
+
+html main .login_part .login_way .another_part, body main .login_part .login_way .another_part {
+  width: 348px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main .login_part .login_way .another_part div, body main .login_part .login_way .another_part div {
+  height: 16px;
+  margin: 12px 0 0 0;
+  font-size: 12px;
+  color: #00376B;
+}
+
+html main .login_part .signup_way, body main .login_part .signup_way {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 63px;
+  border: 1px solid #DBDBDB;
+  background-color: #FFFFFF;
+  font-size: 14px;
+}
+
+html main .login_part .signup_way a, body main .login_part .signup_way a {
+  text-decoration: none;
+  color: #0095F6;
+}
+/*# sourceMappingURL=login.css.map */
