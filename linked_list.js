@@ -144,3 +144,5 @@ LinkedList.prototype.indexOf = function(value) {
     }
     return -1;
 };
+
+export {LinkedList};
