@@ -82,38 +82,38 @@ class Graph {
     }
 }
 
-let graph = new Graph();
-let vertices = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+// let graph = new Graph();
+// let vertices = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
 
-for (let i = 0; i < vertices.length; i++) {
-    graph.addVertex(vertices[i]);
-}
+// for (let i = 0; i < vertices.length; i++) {
+//     graph.addVertex(vertices[i]);
+// }
 
-graph.addEdge("A", "B");
-graph.addEdge("A", "C");
-graph.addEdge("A", "D");
-graph.addEdge("C", "G");
-graph.addEdge("D", "G");
-graph.addEdge("D", "H");
-graph.addEdge("B", "E");
-graph.addEdge("B", "F");
-graph.addEdge("E", "I");
-graph.print();
-console.log("");
+// graph.addEdge("A", "B");
+// graph.addEdge("A", "C");
+// graph.addEdge("A", "D");
+// graph.addEdge("C", "G");
+// graph.addEdge("D", "G");
+// graph.addEdge("D", "H");
+// graph.addEdge("B", "E");
+// graph.addEdge("B", "F");
+// graph.addEdge("E", "I");
+// graph.print();
+// console.log("");
 
-graph.removeEdge("B", "E");
-graph.removeEdge("B", "E");
-graph.print();
-console.log("");
+// graph.removeEdge("B", "E");
+// graph.removeEdge("B", "E");
+// graph.print();
+// console.log("");
 
-graph.removeVertex("B");
-graph.print();
-console.log("");
+// graph.removeVertex("B");
+// graph.print();
+// console.log("");
 
-graph.removeVertex("D");
-graph.print();
-console.log("");
+// graph.removeVertex("D");
+// graph.print();
+// console.log("");
 
-console.log(graph.sizeVertex());
-console.log(graph.sizeEdge("B"));
-console.log(graph.print());
+// console.log(graph.sizeVertex());
+// console.log(graph.sizeEdge("B"));
+// console.log(graph.print());
